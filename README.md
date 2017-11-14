@@ -1,0 +1,2 @@
+# AutoHotKey-CosmoFantasy
+AutoHotKey-CosmoFantasy
