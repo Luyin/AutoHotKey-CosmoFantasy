@@ -165,3 +165,26 @@ runCosmoBattle()
 	
 	gobackToMain()
 }
+
+runMission()
+{
+	activateNoxPlayer()
+	
+	selectMission()
+	
+	while(!isAvailableGetting())
+	{
+		selectGetting()
+	}
+	
+	selectESC()
+}
+
+runReceiving()
+{
+	activateNoxPlayer()
+	
+	selectReceiving()
+	
+	selectESC()
+}

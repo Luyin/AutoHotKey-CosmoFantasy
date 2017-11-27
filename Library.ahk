@@ -52,6 +52,37 @@ selectSPQuest()
 	Sleep, 2000
 }
 
+selectMission()
+{
+	;;미션 클릭
+	MouseClick, left,  42,  360
+	Sleep, 2000
+}
+
+selectReceiving()
+{
+	;;미션 클릭
+	MouseClick, left,  42,  520
+	Sleep, 2000
+}
+
+selectGetting()
+{
+	;;획득 선택
+	MouseClick, left,  545,  242
+	Sleep, 2000
+	MouseClick, left,  403,  468
+	Sleep, 2000
+}
+
+selectGettingAll()
+{
+	MouseClick, left,  398,  507
+	Sleep, 2000
+	MouseClick, left,  404,  452
+	Sleep, 2000
+}
+
 selectNurtureMenu(nurtureMode)
 {
 	if (nurtureMode = 0)
@@ -270,6 +301,13 @@ selectNobtn()
 	Sleep, 1000
 }
 
+selectESC()
+{
+	;ESC 버튼 선택
+	Send, {ESC}
+	Sleep, 1000
+}
+
 gobackToMain()
 {
 	;메인 화면으로 돌아가기
@@ -406,6 +444,25 @@ isAvailableSeletingDifficulty(SPMode)
 		; (두번째) 경우의 수에 대한 예외 처리
 		ImageSearch, vx, vy, 532, 369, 630, 400, *80 images/selectDifficulty.png
 	}
+	
+	Sleep, 1000
+	
+	if (errorlevel = 0)
+	{
+		return true
+	}
+	else
+	{
+		return false
+	}
+}
+
+isAvailableGetting()
+{
+	activateNoxPlayer()
+	
+	; 첫번째 항목
+	ImageSearch, vx, vy, 500, 230, 580, 260, *80 images/challengebtn.png
 	
 	Sleep, 1000
 	
