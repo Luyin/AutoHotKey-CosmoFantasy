@@ -55,7 +55,7 @@ selectSPQuest()
 selectMission()
 {
 	;;미션 클릭
-	MouseClick, left,  42,  360
+	MouseClick, left, 42,  350
 	Sleep, 2000
 }
 
@@ -305,7 +305,7 @@ selectESC()
 {
 	;ESC 버튼 선택
 	Send, {ESC}
-	Sleep, 1000
+	Sleep, 2000
 }
 
 gobackToMain()

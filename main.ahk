@@ -21,32 +21,27 @@ guiclose:
 F1:
 ;세인트 육성 퀘스트
 runSaintNurture()
-ExitApp
 return
 
 F2:
 ;모든 소재 수집 퀘스트 수행
 runGathering()
-ExitApp
 return
 
 F3:
 ;SP 퀘스트 수행
 runSPQuest()
-ExitApp
 return
 
 F4:
 ;코스모 배틀 수행
 runCosmoBattle()
-ExitApp
 return
 
 F5:
 ;미션함 & 수신함 선택
 runReceiving()
 runMission()
-ExitApp
 return
 
 F6::
@@ -56,7 +51,6 @@ runSaintNurture()
 runGathering()
 runSPQuest()
 runCosmoBattle()
-ExitApp
 return
 
 F12::
